@@ -1,0 +1,36 @@
+﻿<Window x:Class="PildorasInformaticas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PildorasInformaticas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="367,54,0,0" TextWrapping="Wrap" Text="Mi título" VerticalAlignment="Top"/>
+
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <RadioButton Checked="ColorRed_Checked" Content="Red" HorizontalAlignment="Left" Margin="135,61,0,0" VerticalAlignment="Top" Name="ColorRed"/>
+            <RadioButton Checked="ColorYellow_Checked" Content="Yellow" HorizontalAlignment="Left" Margin="135,99,0,0" VerticalAlignment="Top" Name="ColorYellow"/>
+            <RadioButton Checked="ColorGreen_Checked" Content="Green" HorizontalAlignment="Left" Margin="136,139,0,0" VerticalAlignment="Top" Name="ColorGreen"/>
+            
+            <Image Name="ImageTarget" Grid.Column="1" HorizontalAlignment="Left" Height="236" Margin="115,41,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.48,0.475" Source="empty.png"/>
+
+        </Grid>
+
+
+    </Grid>
+
+
+
+</Window>
